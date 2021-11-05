@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Password generator</title>
+<style>  textarea {
+    resize: none;
+}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon2.jpg">
+    <link rel="stylesheet" href="../css/proj3.css">
+    <script src="../js/proj3.js"></script>
+ 
+  
+
+    </head>
+    <body> 
+
+       
+<div>
+        <p id="password">12345687899</p>
+        <label for="default-remember">Password Length:</label>
+        <textarea id="length" name="length"  cols="5" rows="1"></textarea>
+        <br>
+        <label for="upper"> Contain Uppercase Letters</label>
+
+        <input type="checkbox" id="upper" name="upper" onclick="upper()">
+        
+        <br>
+        <label for="lower"> Contain Lowercase Letters</label>
+
+        <input type="checkbox" id="lower" name="lower" onclick="lower()">
+        <br>
+        <label for="numbers"> Contain Numbers</label>
+
+        <input type="checkbox" id="numbers" name="numbers" onclick="numbers()">
+        <br>
+        <button type ="button" onclick="generate();">Generate Password</button>
+
+    </div>
+        
+        </body>
+
+
+    </html>
+    
